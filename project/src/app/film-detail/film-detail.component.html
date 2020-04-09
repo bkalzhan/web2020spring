@@ -1,0 +1,19 @@
+<h2>{{film.name}}</h2>
+<div class="image">
+    <span>
+        <img src = "{{film.imgURL}}">
+    </span>
+</div>
+
+<div class><h3>Description:</h3><p class="des">{{film.description}}</p></div>
+<div class><h3>Rating:</h3><p class="des">{{film.rating}}</p></div>
+<div class><h3>Actors:</h3><p class="des">{{film.actors}}</p></div>
+<div>
+        <input [(ngModel)]='film.name' placeholder="Title"/><br>
+        <input [(ngModel)]='film.description' placeholder="Description"/><br>
+        <input [(ngModel)]='film.rating' placeholder="Rating"/><br>
+        <input [(ngModel)]='film.actors' placeholder="Actors"/>
+        
+</div>
+
+<button (click) = 'goBack()'>Go back</button>

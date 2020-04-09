@@ -1,0 +1,10 @@
+<h1>My Cities</h1>
+<ul>
+  <li *ngFor='let city of cities'>
+    <a routerLink="/cities/{{city.id}}/cinemas">
+      <span>{{city.name}}</span>
+    </a>
+  </li>
+</ul>
+
+<app-top-ten></app-top-ten>

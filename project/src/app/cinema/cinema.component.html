@@ -1,0 +1,10 @@
+<h1>My Cinemas</h1>
+<ul>
+  <li *ngFor='let cinema of cinemas'>
+    <a routerLink="/cities/{{id}}/cinemas/{{cinema.id}}">
+      <span>{{cinema.name}}</span>
+    </a>
+  </li>
+</ul>
+<button (click)="goBack()">go back</button>
+<app-top-ten></app-top-ten>

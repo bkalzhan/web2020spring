@@ -1,0 +1,8 @@
+<h3>Top Films</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let film of films" class="col-1-4" routerLink="/films/{{film.name}}">
+    <div class="module hero">
+      <h4>{{film.name}}</h4>
+    </div>
+  </a>
+</div>

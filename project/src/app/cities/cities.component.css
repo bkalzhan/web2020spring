@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    font-size: large;
+    height: 50px;
+    color: black;
+    background-color: red;
+    max-height: 200px;
+    min-width: 200px;
+}
+ul{
+    background-color: black;
+}
+li{
+    margin: 15px;
+    display: inline-table;
+    color: red;
+    font-size: 40px;
+    text-decoration: none;
+}

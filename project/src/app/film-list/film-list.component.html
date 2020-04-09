@@ -1,0 +1,19 @@
+<h1>{{cinema.name}}</h1>
+<h2>{{day.name}}</h2>
+<ul>
+    <li *ngFor='let film of films' class="1">
+        <h3>{{film.name}}</h3>
+            <button (click)="getFilm(film.name)">More..</button>
+            <div *ngIf="film1.name===film.name">
+                <div class><h3>Description:</h3><p class="des">{{film1.description}}</p></div>
+                <div class><h3>Rating:</h3><p class="des">{{film1.rating}}</p></div>
+                <div class><h3>Actors:</h3><p class="des">{{film1.actors}}</p></div>
+            </div>
+            <ul>
+                <li *ngFor='let session of film.sessions'>
+                    <a routerLink="/cities/{{id}}/cinemas/{{cinema.id}}/{{day.name}}/films/{{film.name}}/{{session.time}}"><span>{{session.time}}</span></a>
+                </li>
+            </ul>
+    </li>
+</ul>
+<button (click)="goBack()">go back</button>

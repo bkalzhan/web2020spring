@@ -1,0 +1,19 @@
+<h1>{{cinema.name}}</h1><br>
+<h2>{{day.name}}</h2><br>
+<h1>{{film.name}}</h1><br>
+<div>
+    <div  class="left">
+        <h2>Time:  {{session.time}}</h2><br>
+        <h1>Hall:  {{session.hall}}</h1><br>
+    </div>
+    <div class="right">
+        <ul>
+            <li *ngFor='let place of session.place' class="col-1-4">
+                <span>{{place}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<button (click)="goBack()">go back</button>
