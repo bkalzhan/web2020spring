@@ -1,0 +1,28 @@
+<h1>Companies List</h1>
+<div *ngFor="let company of companies" class="all">
+  <a [routerLink]="'/companies/' + company.id">
+  <p>Name:  {{ company.name }}</p>
+  </a>
+  <p> Description:  {{ company.description }}</p>
+  <p>City:  {{ company.city }}</p>
+  <p>Address:  {{ company.address }}</p>
+  <button (click)="deleteCompany(company.id)">Delete</button>
+</div>
+
+<form action="" class="form-data">
+                    <div class="username">
+                     <label>Company name:<input #companyName  type="text"></label>
+                    </div>
+                    <div class="password">
+                        <label>Discription:<input #companyDiscription type="text"></label>
+                    </div>
+                    <div class="password">
+                        <label>City:<input #city type="text"></label>
+                    </div>
+                    <div class="password">
+                        <label>Address:<input #address type="text"></label>
+                    </div>
+                    <button (click)="add(companyName.value, companyDiscription.value, city.value, address.value); companyName.value=''; companyDiscription.value='';
+                    city.value=''; address.value=''"
+                        class="github-btn">Add</button>
+ </form>

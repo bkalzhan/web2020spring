@@ -1,0 +1,22 @@
+<div *ngIf="vacancy">
+    <h1> Vacancy Details {{vacancy.name}}</h1>
+    <p>Id: {{ vacancy.id }}</p>
+    <p>Name: {{ vacancy.name}}</p>
+                       <label>
+                        <input [(ngModel)]="vacancy.name" placeholder="name"/>
+                      </label>
+                      <label>
+                        <input [(ngModel)]="vacancy.company_id" placeholder="id"/>
+                      </label>
+                       <button (click)="save(vacancy.id)" class="save">save</button>
+    <button (click)="deleteVacancy(vacancy.id)">Delete</button>
+  </div><hr>
+  
+  <div *ngIf = "sorted">
+    <h1> Top 5 Vacancies </h1>
+    <div *ngFor="let s of sorted" class="all">
+          <a [routerLink]="'/vacancies/' + s.id">
+        <p> Name: {{s.name}} </p></a>
+        <p> Salary: {{s.salary}} </p>
+    </div>
+  </div>

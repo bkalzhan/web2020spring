@@ -1,0 +1,23 @@
+<h1>Vacancies List</h1>
+<div *ngFor="let vacancy of vacancies" class="all">
+  <a [routerLink]="'/vacancies/' + vacancy.id">
+  <p>Name:  {{ vacancy.name }}</p>
+  </a>
+</div>
+<form action="" class = "form-data">
+                    <div class="username">
+                     <label>Vacancy name:   <input #name  type="text"></label>
+                    </div>
+                    <div class="a1">
+                        <label>Discription:<input #description type="text"></label>
+                    </div>
+                    <div class="a2">
+                        <label>Salary:<input #salary type="text"></label>
+                    </div>
+                    <div class="a3">
+                        <label>Company Id:<input #id type="text"></label>
+                    </div>
+                    <button (click)="add(name.value, description.value, salary.value, id.value); name.value=''; description.value='';
+                    salary.value=''; id.value=''"
+                        class="github-btn">Add</button>
+ </form>
