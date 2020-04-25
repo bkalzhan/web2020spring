@@ -1,0 +1,24 @@
+<div *ngIf="session">
+    <h1> {{session.time}}</h1>
+       <label>
+              <input [(ngModel)]="session.time" placeholder="time"/>
+              <input [(ngModel)]="session.price" placeholder="price"/>
+        </label><hr>
+        <button (click)="save(session.id)" class="save">save</button>
+</div>
+  
+<h1> Places </h1>
+  <div *ngFor = "let hall of halls" class="places">
+      <button type="button">{{hall.place}}</button>
+</div>
+
+
+<form action="" class="form-data">
+    <div class="username">
+        <label>Place:<input #place  type="text"></label>
+    </div>
+    <div class="password">
+        <label>Session_Id:<input #sessionId type="text"></label>
+    </div>
+    <button (click)="add(place.value, sessionId.value); place.value=''; sessionId.value=''" class="github-btn">Add</button>
+</form>

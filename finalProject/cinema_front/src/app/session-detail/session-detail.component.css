@@ -1,0 +1,19 @@
+  
+.form-data input[type="text"]{
+    width: 30%;
+    min-height: 20px;
+    /* padding: 10px; */
+    margin: 10px 0 10px 20px ;
+    border-radius: 5px;
+    border: 1px solid #d1d5da;
+    background-color: #fafbfc;
+  }
+
+  .a1 label input[type="text"]{
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+
+  .places{
+      display: inline-block;
+  }

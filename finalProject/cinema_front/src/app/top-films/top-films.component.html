@@ -1,0 +1,12 @@
+<h1>TOP Films</h1>
+<div class="aLL">
+    <div *ngFor="let film of films" class="all">
+        <a [routerLink]="'/films/' + film.id">
+        <h3 class="title">{{ film.title }}</h3>
+        </a>
+        <img src='{{film.imgUrl}}'>
+        <p>Rating:  {{ film.rating }}</p>
+        <p>Country:  {{ film.country }}</p>
+        <p>Year:  {{ film.year }}</p>
+      </div>
+</div>

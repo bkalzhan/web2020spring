@@ -1,0 +1,38 @@
+<h1 class="title">Films</h1>
+<div *ngFor="let film of films" class="container">
+  <a [routerLink]="'/films/' + film.id">
+    <h3 class="title">{{ film.title }}</h3>
+  </a>
+    <img src='{{film.imgUrl}}'> 
+    <p> Description:  {{ film.description }}</p>
+    <p>Country:  {{ film.country }}</p>
+    <p>Year:  {{ film.year }}</p>
+    <button (click)="deleteFilm(film.id)">Delete</button>
+</div>
+
+<form action="" class="form-data">
+                    <div class="username">
+                     <label>Title:<input #title  type="text"></label>
+                    </div>
+                    <div class="password">
+                        <label>Rating:<input #rating type="text"></label>
+                       </div>
+                    <div class="password">
+                        <label>Discription:<input #discription type="text"></label>
+                    </div>
+                    <div class="password">
+                        <label>Country:<input #country type="text"></label>
+                    </div>
+                    <div class="password">
+                        <label>Year:<input #year type="text"></label>
+                    </div>
+                    <div class="password">
+                        <label>Genre:<input #genre type="text"></label>
+                    </div>
+                    <div class="password">
+                        <label>imgUrl:<input #imgUrl type="text"></label>
+                    </div>
+                        <button (click)="add(title.value, rating.value, discription.value, country.value, year.value, genre.value, imgUrl.value); title.value=''; rating.value=''; discription.value='';
+                    country.value=''; year.value=''; genre.value=''; imgUrl.value=''"
+                        class="github-btn">Add</button>
+ </form>

@@ -1,0 +1,20 @@
+img{
+    width: 40%;
+    margin-left: 30%;
+}
+h2{
+    background-color: rgb(123, 184, 63);
+    opacity: 100%;
+    margin: 5%;
+    padding: 5%;
+    color: darkgreen;
+    text-align: center;
+    font-size: 50px;
+}
+.ses{
+    margin: 20px;
+    padding: 10%;
+    background-color: coral;
+    bottom: red 3px;
+    font-size: 30px;
+}

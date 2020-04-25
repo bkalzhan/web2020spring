@@ -1,0 +1,27 @@
+.form-data input[type="text"]{
+    width: 30%;
+    min-height: 20px;
+    margin: 10px 0 10px 20px ;
+    border-radius: 5px;
+    border: 1px solid #d1d5da;
+    background-color: #fafbfc;
+  }
+
+  .a1 label input[type="text"]{
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+
+  .all{
+    width: 30%;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
+  .aLL{
+      margin: 5%;
+  }
+ 
+img{
+  width: 60%;
+}

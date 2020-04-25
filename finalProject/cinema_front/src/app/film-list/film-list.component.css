@@ -1,0 +1,28 @@
+.form-data input[type="text"]{
+  width: 30%;
+  min-height: 20px;
+  margin: 10px 0 10px 20px ;
+  border-radius: 5px;
+  border: 1px solid #d1d5da;
+  background-color: #fafbfc;
+}
+
+.a1 label input[type="text"]{
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.container{
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+img{
+  width: 20%;
+  height: 350px;
+}
+.title{
+  font-size: 30px;
+  color:rgb(235, 164, 72);
+  text-decoration: none;
+}

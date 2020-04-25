@@ -1,0 +1,22 @@
+<div>
+    <h2>{{film.title}}</h2>
+    <img src='{{film.imgUrl}}'>
+    <div *ngFor="let session of sessions" class="ses">
+        <a [routerLink]="'/sessions/' + session.id">{{session.time}} </a>{{session.price}}
+    </div>
+</div>
+
+
+<form action="" class="form-data">
+    <div class="username">
+        <label>Time::<input #time  type="text"></label>
+    </div>
+    <div class="password">
+        <label>Price:<input #price type="text"></label>
+        </div>
+    <div class="password">
+        <label>Film_Id:<input #filmId type="text"></label>
+    </div>
+        <button (click)="add(time.value, price.value, filmId.value); time.value=''; price.value=''; filmId.value=''"
+        class="github-btn">Add</button>
+</form>
