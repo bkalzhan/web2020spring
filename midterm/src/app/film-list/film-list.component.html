@@ -1,0 +1,11 @@
+<h1>Kalzhan Bekzat ID: 18BD110628</h1>
+<h2>Films</h2>
+<div>
+    <ul>
+        <li *ngFor='let film of films'>
+            <a routerLink='/film/{{film.id}}'>
+                <span>{{film.title}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
