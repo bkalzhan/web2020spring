@@ -1,2 +1,3 @@
 # web2020spring
-web develpoment
+Django Framework, Python;
+Angular Framework, JS
